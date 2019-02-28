@@ -15,6 +15,15 @@ class CompleteRange{
 	}
 }
 
-$resultado=CompleteRange::build([]);
-var_dump($resultado);
+$resultado=CompleteRange::build([5,15]);
+   var_dump($resultado);
+   for ($i=0 ;$i<count($resultado) ;$i++) {
+   	 echo $resultado[$i]."<br/>";
+   }
+
+    $siguiente=0;
+   while ($siguiente<count($resultado)) {
+   	 echo $resultado[$siguiente]."<br>";
+   	 $siguiente++;
+   }
 ?>
